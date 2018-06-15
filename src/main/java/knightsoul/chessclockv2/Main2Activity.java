@@ -363,7 +363,7 @@ public class Main2Activity extends AppCompatActivity {
                 player1Timer = false;
                 paused = true;
 
-                btn_pause.setVisibility(View.GONE);
+                btn_pause.setVisibility(View.INVISIBLE);
             }
         });
 
