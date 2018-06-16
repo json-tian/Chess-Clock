@@ -14,7 +14,6 @@ import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
-
 public class Main2Activity extends AppCompatActivity {
 
     public int moves = 0;
@@ -30,6 +29,7 @@ public class Main2Activity extends AppCompatActivity {
 
     private AdView mAdView;
 
+    private MediaPlayer moveSound;
 
     Button button1;
     Button button2;
@@ -76,8 +76,8 @@ public class Main2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        final MediaPlayer moveSound = MediaPlayer.create(this, R.raw.move);
-        final MediaPlayer timeSound = MediaPlayer.create(this, R.raw.alarm);
+        moveSound = MediaPlayer.create(this, R.raw.move);
+
 
         // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
         MobileAds.initialize(this, "ca-app-pub-3781115230256321~6975876312");
@@ -200,8 +200,6 @@ public class Main2Activity extends AppCompatActivity {
                             button2.setEnabled(false);
                             button1.setEnabled(false);
                             btn_pause.setEnabled(false);
-                            timeSound.start();
-
 
                         }
                     }.start();
@@ -244,7 +242,6 @@ public class Main2Activity extends AppCompatActivity {
                             button2.setEnabled(false);
                             button1.setEnabled(false);
                             btn_pause.setEnabled(false);
-                            timeSound.start();
 
 
                         }
@@ -297,8 +294,6 @@ public class Main2Activity extends AppCompatActivity {
                             button2.setEnabled(false);
                             button1.setEnabled(false);
                             btn_pause.setEnabled(false);
-                            timeSound.start();
-
                         }
                     }.start();
 
@@ -339,7 +334,6 @@ public class Main2Activity extends AppCompatActivity {
                             button2.setEnabled(false);
                             button1.setEnabled(false);
                             btn_pause.setEnabled(false);
-                            timeSound.start();
 
                         }
                     }.start();
