@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/notPressed"
+    android:background="@android:color/darker_gray"
     tools:context="knightsoul.chessclockv2.Main3Activity"
     tools:layout_editor_absoluteY="25dp">
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/guideline5"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4">
 
         <Button
@@ -23,8 +23,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/holo_blue_bright"
+            android:backgroundTint="@color/button_select"
             android:text="Bullet 1|1"
+            android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -35,8 +36,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/holo_blue_bright"
+            android:backgroundTint="@color/button_select"
             android:text="BULLET 2|1"
+            android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -45,14 +47,15 @@
 
     <TextView
         android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="352dp"
+        android:layout_height="74dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif-condensed"
-        android:text="PRESETS"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Time Controls"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textColor="@android:color/background_light"
-        android:textSize="60sp"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -61,12 +64,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/guideline5"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline4">
 
         <Button
@@ -76,6 +79,7 @@
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="BLITZ 3|2"
+            android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -88,6 +92,7 @@
             android:layout_weight="1"
             android:backgroundTint="@android:color/holo_orange_dark"
             android:text="BLITZ 5|5"
+            android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -96,21 +101,23 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/guideline6"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5">
 
         <Button
             android:id="@+id/btn_rapid1"
+            style="@style/Widget.AppCompat.Button"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/holo_purple"
+            android:backgroundTint="@android:color/holo_orange_dark"
             android:text="RAPID 10|10"
+            android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -121,8 +128,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/holo_purple"
+            android:backgroundTint="@android:color/holo_orange_dark"
             android:text="RAPID 15|10"
+            android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/guideline"
@@ -131,12 +139,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout5"
-        android:orientation="vertical"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="@+id/guideline6"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="@+id/guideline5">
 
         <Button
@@ -144,8 +152,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/pressed"
+            android:backgroundTint="@color/button_select"
             android:text="CLASSICAL 30|30"
+            android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -156,8 +165,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/pressed"
+            android:backgroundTint="@color/button_select"
             android:text="CLASSICAL 45|45"
+            android:textColor="@android:color/background_light"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/guideline"
@@ -174,7 +184,7 @@
         android:layout_marginTop="8dp"
         android:backgroundTint="@color/noTime"
         android:fontFamily="serif"
-        android:text="Custom Time"
+        android:text="Custom"
         android:textColor="@android:color/background_light"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"

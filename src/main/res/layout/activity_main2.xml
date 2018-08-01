@@ -41,8 +41,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#999999"
-            android:fontFamily="serif"
+            android:fontFamily="@font/droid_sans"
             android:text="1000"
+            android:textColor="@android:color/black"
             android:textSize="55sp" />
 
         <TextView
@@ -57,8 +58,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:background="#999999"
-            android:fontFamily="serif"
+            android:fontFamily="@font/droid_sans"
             android:text="1000"
+            android:textColor="@android:color/black"
             android:textSize="55sp" />
 
     </LinearLayout>

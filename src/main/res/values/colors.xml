@@ -3,9 +3,9 @@
     <color name="colorPrimary">#3f51b5</color>
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="pressed">#99cc00</color>
+    <color name="pressed">#ff8000</color>
     <color name="noTime">#ff4444</color>
-    <color name="notPressed">#aaa</color>
-
+    <color name="notPressed">#cc6600</color>
     <color name="black_overlay">#66000000</color>
+    <color name="button_select">#009900</color>
 </resources>

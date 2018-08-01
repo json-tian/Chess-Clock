@@ -144,6 +144,9 @@ public class Main2Activity extends AppCompatActivity {
                                 button2.setText(setText(temp2));
                                 button1.setBackgroundColor(Color.parseColor("#999999"));
                                 button2.setBackgroundColor(Color.parseColor("#999999"));
+                                button1.setTextColor(Color.parseColor("#000000"));
+                                button2.setTextColor(Color.parseColor("#000000"));
+
                             }
                         });
                 builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
@@ -166,6 +169,8 @@ public class Main2Activity extends AppCompatActivity {
 
                 button1.setBackgroundColor(Color.parseColor("#1AC02B"));
                 button2.setBackgroundColor(Color.parseColor("#999999"));
+                button1.setTextColor(Color.parseColor("#ffffff"));
+                button2.setTextColor(Color.parseColor("#000000"));
 
                 if (player1Timer == false && moves == 0) {
 
@@ -197,6 +202,7 @@ public class Main2Activity extends AppCompatActivity {
                         public void onFinish() {
 
                             button1.setBackgroundColor(Color.parseColor("#C0392B"));
+                            button1.setTextColor(Color.parseColor("#ffffff"));
                             button2.setEnabled(false);
                             button1.setEnabled(false);
                             btn_pause.setEnabled(false);
@@ -239,6 +245,7 @@ public class Main2Activity extends AppCompatActivity {
                         public void onFinish() {
 
                             button1.setBackgroundColor(Color.parseColor("#C0392B"));
+                            button2.setTextColor(Color.parseColor("#ffffff"));
                             button2.setEnabled(false);
                             button1.setEnabled(false);
                             btn_pause.setEnabled(false);
@@ -261,6 +268,8 @@ public class Main2Activity extends AppCompatActivity {
 
                 button1.setBackgroundColor(Color.parseColor("#999999"));
                 button2.setBackgroundColor(Color.parseColor("#1AC02B"));
+                button1.setTextColor(Color.parseColor("#000000"));
+                button2.setTextColor(Color.parseColor("#ffffff"));
 
                 if (player2Timer == false && moves == 0) {
 
@@ -291,6 +300,7 @@ public class Main2Activity extends AppCompatActivity {
                         public void onFinish() {
 
                             button2.setBackgroundColor(Color.parseColor("#C0392B"));
+                            button2.setTextColor(Color.parseColor("#ffffff"));
                             button2.setEnabled(false);
                             button1.setEnabled(false);
                             btn_pause.setEnabled(false);
@@ -331,6 +341,7 @@ public class Main2Activity extends AppCompatActivity {
                         public void onFinish() {
 
                             button2.setBackgroundColor(Color.parseColor("#C0392B"));
+                            button2.setTextColor(Color.parseColor("#ffffff"));
                             button2.setEnabled(false);
                             button1.setEnabled(false);
                             btn_pause.setEnabled(false);
@@ -348,9 +359,11 @@ public class Main2Activity extends AppCompatActivity {
 
                 if (player1Timer == true) {
                     button1.setBackgroundColor(Color.parseColor("#F9AE34"));
+                    button1.setTextColor(Color.parseColor("#ffffff"));
 
                 } else if (player2Timer == true) {
                     button2.setBackgroundColor(Color.parseColor("#F9AE34"));
+                    button2.setTextColor(Color.parseColor("#ffffff"));
                 }
 
                 player2Timer = false;
@@ -377,7 +390,7 @@ public class Main2Activity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(Main2Activity.this);
                 builder.setCancelable(true);
                 builder.setTitle("Switch Sides?");
-                builder.setMessage("Press 'Confirm' to switch sides.");
+                builder.setMessage("Press 'Confirm' to switch sides. This will reset the timer.");
                 builder.setPositiveButton("Confirm",
                         new DialogInterface.OnClickListener() {
                             @Override
@@ -401,6 +414,8 @@ public class Main2Activity extends AppCompatActivity {
                                 button2.setText(setText(temp2));
                                 button1.setBackgroundColor(Color.parseColor("#999999"));
                                 button2.setBackgroundColor(Color.parseColor("#999999"));
+                                button1.setTextColor(Color.parseColor("#000000"));
+                                button2.setTextColor(Color.parseColor("#000000"));
                             }
                         });
                 builder.setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
