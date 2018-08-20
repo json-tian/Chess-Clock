@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Main3Activity"
+            android:name=".SelectionScreen"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,11 +19,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Main2Activity"
+            android:name=".ClockActivity"
             android:noHistory="true"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".MainActivity"
+            android:name=".TimePicker"
             android:screenOrientation="portrait">
         >
         </activity>

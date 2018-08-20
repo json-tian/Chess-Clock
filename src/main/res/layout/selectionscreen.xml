@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray"
-    tools:context="knightsoul.chessclockv2.Main3Activity"
+    tools:context="knightsoul.chessclockv2.SelectionScreen"
     tools:layout_editor_absoluteY="25dp">
 
     <LinearLayout
