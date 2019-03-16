@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Chess Clock V2</string>
+
+    <string name="title_activity_main3">activity_main3</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="action_credits">Credits</string>
+    <string name="trash">trash</string>
+    <string name="edit">edit</string>
+    <string name="add">add</string>
+    <string name="cancel">cancel</string>
+</resources>
