@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#595959"
+    android:background="#383838"
     android:orientation="horizontal"
-    tools:context="jasontian.chessclockpro.jasontian.chessclockv2.Activities.ClockActivity"
+    tools:context="jasontian.chessclockpro.Activities.ClockActivity"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="25dp">
 
@@ -28,23 +28,29 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_height="0dp"
         android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:paddingBottom="5sp"
+        >
 
-        app:layout_constraintTop_toTopOf="@+id/guideline2">
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02" />
 
         <Button
             android:id="@+id/btn_player1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="@drawable/button_stopped"
             android:fontFamily="@font/droid_sans"
             android:text="1000"
-            android:background="#999999"
             android:textColor="@android:color/black"
             android:textSize="55sp" />
 
@@ -59,23 +65,28 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#999999"
+            android:background="@drawable/button_stopped"
             android:fontFamily="@font/droid_sans"
             android:text="1000"
             android:textColor="@android:color/black"
             android:textSize="55sp" />
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02" />
+
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_height="0dp"
         android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:orientation="horizontal"
-
+        android:paddingBottom="10sp"
         app:layout_constraintTop_toTopOf="@+id/guideline3">
 
         <Space
@@ -88,7 +99,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:background="@android:drawable/ic_menu_preferences"
+            android:background="@drawable/settings"
             app:layout_constraintBottom_toBottomOf="@+id/guideline2"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             tools:layout_editor_absoluteX="103dp" />
@@ -103,7 +114,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:background="@android:drawable/ic_media_pause"
+            android:background="@drawable/pause"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintRight_creator="1"
@@ -120,7 +131,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:background="@android:drawable/ic_menu_rotate"
+            android:background="@drawable/redo"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             tools:layout_editor_absoluteX="418dp" />
 
@@ -134,7 +145,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
-            android:background="@android:drawable/ic_menu_always_landscape_portrait"
+            android:background="@drawable/swap"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             tools:layout_editor_absoluteX="315dp" />
 

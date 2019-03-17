@@ -143,8 +143,10 @@ public class ClockActivity extends AppCompatActivity {
                 btn_pause.setVisibility(View.VISIBLE);
                 moveSound.start();
 
-                button1.setBackgroundColor(Color.parseColor("#1AC02B"));
-                button2.setBackgroundColor(Color.parseColor("#999999"));
+                //button1.setBackgroundColor(Color.parseColor("#1AC02B"));
+                //button2.setBackgroundColor(Color.parseColor("#999999"));
+                button1.setBackgroundResource(R.drawable.button_ticking);
+                button2.setBackgroundResource(R.drawable.button_stopped);
                 button1.setTextColor(Color.parseColor("#ffffff"));
                 button2.setTextColor(Color.parseColor("#000000"));
 
@@ -168,6 +170,7 @@ public class ClockActivity extends AppCompatActivity {
                         public void onFinish() {
                             button1.setBackgroundColor(Color.parseColor("#C0392B"));
                             button1.setTextColor(Color.parseColor("#ffffff"));
+                            button1.setBackgroundResource(R.drawable.button_timeout);
                             timeGone();
                         }
                     }.start();
@@ -196,8 +199,10 @@ public class ClockActivity extends AppCompatActivity {
                 btn_pause.setEnabled(true);
                 moveSound.start();
 
-                button1.setBackgroundColor(Color.parseColor("#999999"));
-                button2.setBackgroundColor(Color.parseColor("#1AC02B"));
+                //button1.setBackgroundColor(Color.parseColor("#999999"));
+                //button2.setBackgroundColor(Color.parseColor("#1AC02B"));
+                button2.setBackgroundResource(R.drawable.button_ticking);
+                button1.setBackgroundResource(R.drawable.button_stopped);
                 button1.setTextColor(Color.parseColor("#000000"));
                 button2.setTextColor(Color.parseColor("#ffffff"));
                 if (turn == 1 || turn == 0) {
@@ -220,6 +225,7 @@ public class ClockActivity extends AppCompatActivity {
                         public void onFinish() {
                             button2.setBackgroundColor(Color.parseColor("#C0392B"));
                             button2.setTextColor(Color.parseColor("#ffffff"));
+                            button2.setBackgroundResource(R.drawable.button_timeout);
                             timeGone();
                         }
                     }.start();
@@ -248,9 +254,11 @@ public class ClockActivity extends AppCompatActivity {
                 if (turn == 1) {
                     button1.setBackgroundColor(Color.parseColor("#F9AE34"));
                     button1.setTextColor(Color.parseColor("#ffffff"));
+                    button1.setBackgroundResource(R.drawable.button_paused);
                 } else if (turn == 2) {
                     button2.setBackgroundColor(Color.parseColor("#F9AE34"));
                     button2.setTextColor(Color.parseColor("#ffffff"));
+                    button2.setBackgroundResource(R.drawable.button_paused);
                 }
                 turn = 0;
                 btn_pause.setVisibility(View.INVISIBLE);
@@ -352,8 +360,10 @@ public class ClockActivity extends AppCompatActivity {
         btn_pause.setVisibility(View.INVISIBLE);
         button1.setText(updateText(p1Time));
         button2.setText(updateText(p2Time));
-        button1.setBackgroundColor(Color.parseColor("#999999"));
-        button2.setBackgroundColor(Color.parseColor("#999999"));
+        //button1.setBackgroundColor(Color.parseColor("#999999"));
+        //button2.setBackgroundColor(Color.parseColor("#999999"));
+        button1.setBackgroundResource(R.drawable.button_stopped);
+        button2.setBackgroundResource(R.drawable.button_stopped);
         button1.setTextColor(Color.parseColor("#000000"));
         button2.setTextColor(Color.parseColor("#000000"));
     }
