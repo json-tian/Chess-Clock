@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Chess Clock V2</string>
+    <string name="app_name">Chess Clock</string>
 
     <string name="title_activity_main3">activity_main3</string>
     <string name="dummy_button">Dummy Button</string>

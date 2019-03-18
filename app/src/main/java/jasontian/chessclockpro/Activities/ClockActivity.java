@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.LinearLayout;
+
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -57,6 +59,8 @@ public class ClockActivity extends AppCompatActivity {
     Button btn_back;
     Button btn_reset;
 
+    LinearLayout optionsLayout;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,7 +84,23 @@ public class ClockActivity extends AppCompatActivity {
         btn_reset = findViewById(R.id.btn_reset);
         btn_switch = findViewById(R.id.btn_switch);
 
+        //Resize Buttons to be Square
+        optionsLayout = findViewById(R.id.linearLayout);
+        double height = optionsLayout.getHeight();
+        double width = optionsLayout.getWidth();
+
+        double difference = height - ((width / 17) * 3);
+        if (difference >= 0) {
+            optionsLayout.setPadding(0, optionsLayout.getPaddingTop() + (int) difference / 2, 0, optionsLayout.getPaddingBottom() + (int) difference / 2);
+        } else {
+            optionsLayout.setPadding((int) difference / -2, 0, (int) difference / -2, 0);
+        }
+
+        //Stops screen from falling asleep
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
+        //Remove notification bar
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         btn_pause.setVisibility(View.INVISIBLE);
 

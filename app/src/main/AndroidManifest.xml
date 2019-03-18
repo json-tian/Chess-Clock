@@ -26,7 +26,6 @@
             android:name="jasontian.chessclockpro.Activities.TimePick"
             android:noHistory="true"
             android:screenOrientation="portrait">
-        >
         </activity>
 
         <meta-data

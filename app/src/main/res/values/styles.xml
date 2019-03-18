@@ -24,6 +24,10 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="AppTheme.Picker" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name="android:textColorPrimary">#ffffff</item>
+    </style>
+
     <!-- Custom Attributes of TimePickerView compound view-->
     <declare-styleable name="TimePickerCompoundView">
         <attr name="type">
