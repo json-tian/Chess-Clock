@@ -93,7 +93,7 @@ public class ClockActivity extends AppCompatActivity {
         if (difference >= 0) {
             optionsLayout.setPadding(0, optionsLayout.getPaddingTop() + (int) difference / 2, 0, optionsLayout.getPaddingBottom() + (int) difference / 2);
         } else {
-            optionsLayout.setPadding((int) difference / -2, 0, (int) difference / -2, 0);
+            optionsLayout.setPadding((int) (difference / -2) * (17/3), 0, (int) (difference / -2) * (17/3), 0);
         }
 
         //Stops screen from falling asleep
